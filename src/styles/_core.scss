@@ -1,0 +1,495 @@
+/*
+================================================================================
+    Reboot
+================================================================================
+*/
+
+html {
+    font-size: $font-size-base;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+* {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*::-webkit-input-placeholder {
+	color: #666;
+    opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder{
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+
+body {
+    position: relative;
+    //background: $body-bg url(../images/bg-pattern.png) 0 0 repeat;
+    //background-size: 193px;
+    font-family: $font-family-base;
+    font-size: 1rem;
+    line-height: $line-height-base;
+    //min-width: 320px;
+    overflow-x: hidden;
+
+    //@include image-retina('../images/bg-pattern@2x.png', 2);
+    //@include image-retina('../images/bg-pattern@3x.png', 3);
+}
+
+[role='button'] {
+    cursor: pointer;
+}
+
+a,
+area,
+button,
+[role='button'],
+input,
+label,
+select,
+summary,
+textarea {
+    touch-action: manipulation;
+}
+
+input,
+button,
+select,
+textarea {
+    border-radius: 0;
+    line-height: inherit;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+/* Resize textarea only vertical */
+textarea {
+    resize: vertical;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+
+/*
+================================================================================
+    Animations & Transitions
+================================================================================
+*/
+
+.fade {
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+    &.in {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/*
+================================================================================
+    Grid
+================================================================================
+*/
+
+// .row {
+//     margin: 0 -1rem;
+//     position: relative;
+//     width: auto !important;
+// }
+
+// .row:before,
+// .row:after {
+//     content: '';
+//     display: table;
+// }
+
+// .row:after {
+//     clear: both;
+// }
+
+// .col-12,
+// .col-11,
+// .col-10,
+// .col-9,
+// .col-8,
+// .col-7,
+// .col-6,
+// .col-5,
+// .col-4,
+// .col-3,
+// .col-2,
+// .col-1 {
+//     box-sizing: border-box;
+//     float: left;
+//     min-height: 1px;
+//     min-height: 1px;
+//     padding: 0 1rem;
+//     position: relative;
+
+//     > *:first-child {
+//         margin-top: 0;
+//     }
+//     > *:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+
+
+// .col-12 {
+//     width: 100%;
+// }
+// .col-11 {
+//     width: 91.6667%;
+// }
+// .col-10 {
+//     width: 83.3333%;
+// }
+// .col-9 {
+//     width: 75%;
+// }
+// .col-8 {
+//     width: 66.6667%;
+// }
+// .col-7 {
+//     width: 58.3333%;
+// }
+// .col-6 {
+//     width: 50%;
+// }
+// .col-5 {
+//     width: 41.6667%;
+// }
+// .col-4 {
+//     width: 33.3333%;
+// }
+// .col-3 {
+//     width: 25%;
+// }
+// .col-2 {
+//     width: 16.6667%;
+// }
+// .col-1 {
+//     width: 8.3333%;
+// }
+
+
+
+/*
+================================================================================
+    BOOTSTRAP
+================================================================================
+*/
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+.small-gutters {
+    margin-right: -3px;
+    margin-left: -3px;
+    > [class*="col-"] {
+      padding-right: 3px;
+      padding-left: 3px;
+    }
+  }
+
+.medium-gutters {
+    margin-right: -30px;
+    margin-left: -30px;
+    > [class*="col-"] {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+.large-gutters {
+    margin-right: -45px;
+    margin-left: -45px;
+    > [class*="col-"] {
+      padding-right: 45px;
+      padding-left: 45px;
+    }
+  }
+
+/*
+================================================================================
+    Typography
+================================================================================
+*/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+h1,
+.h1 {
+    font-size: 42px;
+}
+h2,
+.h2 {
+    font-size: 36px;
+}
+h3,
+.h3 {
+    font-size: 26px;
+}
+h4,
+.h4 {
+    font-size: 22px;
+}
+h5,
+.h5 {
+    font-size: 18px;
+}
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+b,
+strong {
+    font-weight: 500;
+}
+
+
+p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+ol,
+ul,
+dl {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+}
+
+
+
+
+/*
+================================================================================
+    Links
+================================================================================
+*/
+
+*:focus {
+    outline: none;
+}
+
+a,
+.link {
+    //color: $link-color;
+    cursor: pointer;
+    // border-bottom: 1px solid $link-border-color;
+    //text-decoration: $link-decoration;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+        //color: $link-hover-color;
+        // border-bottom-color: $link-hover-border-color;
+        text-decoration: none;
+    }
+}
+
+.link-danger {
+    //color: $brand-danger;
+}
+
+
+
+
+/*
+================================================================================
+    Images
+================================================================================
+*/
+
+img {
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/*
+================================================================================
+    Buttons
+================================================================================
+*/
+
+.button {
+    //background-color: #fff;
+    //border: 1px solid #b1adb5;
+    //color: $body-color;
+    //border-radius: 20px;
+    cursor: pointer;
+    //display: inline-block;
+    //height: 40px;
+    //font-size: 14px;
+    //line-height: 1.15;
+    //padding: 11px 22px;
+    text-align: center;
+    //transition: all .15s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+        //background-color: #b1adb5;
+        //color: #fff;
+    }
+    // &:active,
+    // &.active {
+    //     background-image: none;
+    //     -webkit-box-shadow: 5px 5px 12px -4px rgba(0,0,0,.2), inset 0 3px 5px rgba(0,0,0,.1);
+    //             box-shadow: 5px 5px 12px -4px rgba(0,0,0,.2), inset 0 3px 5px rgba(0,0,0,.1);
+    //     outline: 0;
+    // }
+    &:focus {
+        outline: none;
+    }
+    &:focus,
+    &:hover,
+    &.focus {
+        text-decoration: none;
+    }
+    &.disabled,
+    &:disabled {
+        cursor: not-allowed;
+        opacity: .65;
+    }
+}
+
+
+
+
+
+
+
+/*
+================================================================================
+    Helpers
+================================================================================
+*/
+
+/* Hidden Elements */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/* Aligns for Inline Elements */
+
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+.align-justify {
+    text-align: justify;
+}
+
+
+/* Text Overflow */
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: overflow;
+    white-space: nowrap;
+}
+
+
+/* Clearfix */
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+// No underline
+
+.no-underline {
+    &,
+    a {
+        border: none;
+    }
+}
