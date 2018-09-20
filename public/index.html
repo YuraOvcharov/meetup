@@ -34,10 +34,258 @@
 
 </head>
 <body>
-	<div class="container">
-		<h1>Hello</h1>
-	</div>
+	<section class="jumbotron">
+		<div class="header">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="./images/logo_navbar.png" width="30" height="30" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarStart" aria-controls="navbarStart" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarStart">
+						<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Event event-details</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Speakers</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sponsors</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Past events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-8 offset-xl-1">
+					<div class="timer">
+						<div>
+							<span class="days"></span>
+							<div class="smalltext">Days</div>
+						</div>
+						<div>
+							<span class="hours"></span>
+							<div class="smalltext">Hours</div>
+						</div>
+						<div>
+							<span class="minutes"></span>
+							<div class="smalltext">Minutes</div>
+						</div>
+						<div>
+							<span class="seconds"></span>
+							<div class="smalltext">Seconds</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<section class="greeting">
+		<div class="container">
+			<div class="row">
+				<div class="col col-xl-6">
+					<div class="description">
+						<div class="title">Welcome!</div>
+						<div class="paragraph">
+							<p>
+								The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...
+							</p>
+							<p>
+								Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!
+							</p>
+							<p>
+								It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our <span>nvite</span> page here too!
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col col-xl-6">
+					<form class="register-box" style="background-color: green; padding:20px;">
+						<h1>Sign up for our event</h1>
+						<input class="form-control" type="text" placeholder="Enter name">
+						<input class="form-control" type="text" placeholder="Enter your email">
+						<input class="form-control" type="text" placeholder="Phone number">
+						<input class="form-control" type="text" placeholder="Envato Username">
+						<button class="btn btn-primary" type="submit">Let me in</button>
+						<p>
+							Hurry up, Limited seats availble<br>*we will never spam your email
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="event">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<div class="event-details">
+						<img class="event-details__img" src="" alt="">
+						<h4 class="event-details__title">Community</h4>
+						<p class="event-details__paragraph">
+							Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+							and topics. We will have loads of fun.
+						</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="event-details">
+						<img class="event-details__img" src="" alt="">
+						<h4 class="event-details__title">Talk Shop</h4>
+						<p class="event-details__paragraph">
+							In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a few tips and tricks from experienced authors from all over the country.
+						</p>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="event-details">
+						<img class="event-details__img" src="" alt="">
+						<h4 class="event-details__title">War Stories</h4>
+						<p class="event-details__paragraph">
+							Gather round fellow authors!Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="event-accordion" id="ea">
+						<div class="ea__row">
+							<div class="ea__header">
+								<div class="row">
+									<div class="col col-xl-3 align-center">Time</div>
+									<div class="col col-xl-7">Stuff that will happen</div>
+									<div class="col col-xl-2"></div>
+								</div>
+							</div>
+						</div>
+						<div class="ea__row">
+							<div id="ea__header--one" class="ea__header">
+									<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--one" aria-expanded="false" aria-controls="collapseOne">
+										<div class="col col-xl-3 align-center">
+											<p>
+												10am - 12pm
+											</p>
+										</div>
+										<div class="col col-xl-7">
+											<p>
+												Introduction and presentations about Envato
+											</p>
+										</div>
+										<div class="col col-xl-2">
+											<i class="fas fa-plus-circle"></i>
+										</div>
+									</div>
+							</div>
+							<div id="ea__wrap--one" class="ea__wrap collapse" aria-labelledby="ea__header--one" data-parent="#ea">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+						<div class="ea__row">
+							<div id="ea__header--two" class="ea__header">
+									<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--two" aria-expanded="false" aria-controls="collapseOne">
+										<div class="col col-xl-3">
+											<p>
+												12pm - 02 pm
+											</p>
+										</div>
+										<div class="col col-xl-7">
+											<p>
+												Sessions by honorable guests and Speakers		
+											</p>
+										</div>
+										<div class="col col-xl-2">
+											<i class="fas fa-plus-circle"></i>
+										</div>
+									</div>
+							</div>
+							<div id="ea__wrap--two" class="ea__wrap collapse" aria-labelledby="ea__header--two" data-parent="#ea">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+						<div class="ea__row">
+							<div id="ea__header--tree" class="ea__header">
+								<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--tree" aria-expanded="false" aria-controls="collapseOne">
+									<div class="col col-xl-3">
+										<p>
+											12pm - 02 pm
+										</p>
+									</div>
+									<div class="col col-xl-7">
+										<p>
+											Sessions by honorable guests and Speakers		
+										</p>
+									</div>
+									<div class="col col-xl-2">
+										<i class="fas fa-plus-circle"></i>
+									</div>
+								</div>
+							</div>
+							<div id="ea__wrap--tree" class="ea__wrap collapse" aria-labelledby="ea__header--tree" data-parent="#ea">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+						<div class="ea__row">
+							<div id="ea__header--four" class="ea__header">
+									<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--four" aria-expanded="false" aria-controls="collapseOne">
+										<div class="col col-xl-3">
+											<p>
+												12pm - 02 pm
+											</p>
+										</div>
+										<div class="col col-xl-7">
+											<p>
+												Sessions by honorable guests and Speakers		
+											</p>
+										</div>
+										<div class="col col-xl-2">
+											<i class="fas fa-plus-circle"></i>
+										</div>
+									</div>
+							</div>
+							<div id="ea__wrap--four" class="ea__wrap collapse" aria-labelledby="ea__header--four" data-parent="#ea">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>		
+					</div>
+					<p class="align-center">
+						Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish <br>
+						it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 	<!-- Scripts -->
 	<script src="scripts/vendor.min.js" type="text/javascript"></script>

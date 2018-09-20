@@ -70,7 +70,8 @@ gulp.task('scripts-vendor', function () {
     gulp.src([
         // Libraries
         'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js'
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/@fortawesome/fontawesome-free/js/all.js'
         /*'node_modules/jquery/dist/jquery.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
         'bower_components/jquery-mask-plugin/dist/jquery.mask.min.js',
@@ -116,6 +117,7 @@ gulp.task('styles:public', function () {
 
         // Libraries
         'node_modules/bootstrap/scss/bootstrap.scss',
+        'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss',
         /*'bower_components/bootstrap/dist/css/bootstrap.css',
         'bower_components/jquery-ui/themes/base/jquery-ui.css',
         'bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css',
