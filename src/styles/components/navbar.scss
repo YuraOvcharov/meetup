@@ -1,0 +1,47 @@
+.navbar {
+
+    padding-top: 50px !important;
+    .navbar-brand {
+        img {
+            width: 255px;
+            height: 65px;
+        }
+    }
+    .nav-link {
+        font-size: 18px;
+        color: #fff !important;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: $green-color;
+            border-radius: 5px;
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }  
+}
+
+@media only screen and (max-width : 1200px){
+    
+    .collapsing {
+        position: absolute !important;
+        transition: all .1s ease-in-out;
+    }
+    .navbar-collapse {
+        position: relative;
+
+        .navbar-nav {
+            position: absolute !important;
+            width: 100%;
+            background-color: white;
+            text-align: center;
+            border-radius: 5px;
+            .nav-link {
+                color: #4a454b !important;
+            }    
+        }
+    }
+
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,7 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	
+
 	<!-- Disable highlight for phone numbers -->
 	<meta name="format-detection" content="telephone=no">
 
@@ -33,93 +34,106 @@
 
 
 </head>
+
 <body>
-	<section class="jumbotron">
+	<section class="jumbotron-custom">
 		<div class="header">
-			<nav class="navbar navbar-expand-lg navbar-dark">
+			<nav class="navbar navbar-expand-xl navbar-dark">
 				<div class="container">
 					<a class="navbar-brand" href="#">
-						<img src="./images/logo_navbar.png" width="30" height="30" alt="">
+						<img src="./images/logo_navbar.png" alt="">
 					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarStart" aria-controls="navbarStart" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarStart" aria-controls="navbarStart"
+					 aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					
-					<div class="collapse navbar-collapse" id="navbarStart">
-						<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#">Event event-details</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Speakers</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Sponsors</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Past events</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
+
+					<div class="collapse navbar-collapse justify-content-end" id="navbarStart">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#event">Event details</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#speakers">Speakers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#sponsor">Sponsors</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#past-events">Past events</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contacts">Contact</a>
+							</li>
 					</div>
 				</div>
 			</nav>
 		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-xl-8 offset-xl-1">
-					<div class="timer">
-						<div>
-							<span class="days"></span>
-							<div class="smalltext">Days</div>
-						</div>
-						<div>
-							<span class="hours"></span>
-							<div class="smalltext">Hours</div>
-						</div>
-						<div>
-							<span class="minutes"></span>
-							<div class="smalltext">Minutes</div>
-						</div>
-						<div>
-							<span class="seconds"></span>
-							<div class="smalltext">Seconds</div>
-						</div>
-					</div>
-				</div>
+		<div class="timer">
+			<div class="timer__wrap">
+				<div id="timer-date" class="timer__figure">365</div>
+				<div class="timer__word">Days</div>
+			</div>
+			<div class="timer__wrap">
+				<div class="timer__double-dots">:</div>
+			</div>
+			<div class="timer__wrap">
+				<div id="timer-hours" class="timer__figure">23</div>
+				<div class="timer__word ">Hours</div>
+			</div>
+			<div class="timer__wrap">
+				<div class="timer__double-dots">:</div>
+			</div>
+			<div class="timer__wrap">
+				<div id="timer-minutes" class="timer__figure">59</div>
+				<div class="timer__word">Minutes</div>
+			</div>
+			<div class="timer__wrap">
+				<div class="timer__double-dots">:</div>
+			</div>
+			<div class="timer__wrap">
+				<div id="timer-seconds" class="timer__figure">59</div>
+				<div class="timer__word">Seconds</div>
 			</div>
 		</div>
+
+
 	</section>
 
 	<section class="greeting">
 		<div class="container">
-			<div class="row">
-				<div class="col col-xl-6">
+			<div class="row flex-column-reverse flex-lg-row">
+				<div class="col-12 col-lg-6 col-xl-7">
 					<div class="description">
-						<div class="title">Welcome!</div>
-						<div class="paragraph">
+						<h2>
+							Welcome!
+						</h2>
+						<div class="description__paragraph">
 							<p>
 								The biggest envato community meetup in Bangladesh is happening right now! And you can be a part of it too...
 							</p>
 							<p>
-								Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on Tuts+, you are invited!
+								Get together with members of the Envato community to talk shop, trade war stories, make new friends and see the
+								faces behind the avatars. Whether you’re an author on Envato Market, a client on Envato Studio, or a learner on
+								Tuts+, you are invited!
 							</p>
 							<p>
-								It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here so that we can keep track of our guests. Don’t forget to register on our <span>nvite</span> page here too!
+								It doesn’t matter as long as you have the motivation and interest to work at the envato and bring cookies to
+								our event. Just kidding, but we don’t mind having more cookies! ;)Head over and fill up the sign up form here
+								so that we can keep track of our guests. Don’t forget to register on our <span>nvite</span> page here too!
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="col col-xl-6">
-					<form class="register-box" style="background-color: green; padding:20px;">
-						<h1>Sign up for our event</h1>
-						<input class="form-control" type="text" placeholder="Enter name">
+				<div class="col-12 col-lg-6 col-xl-5">
+					<form class="register-box">
+						<h5 class="fw-bold align-center mb-20">Sign up for our event</h5>
+						<input class="form-control" type="text" placeholder="Enter your name">
 						<input class="form-control" type="text" placeholder="Enter your email">
 						<input class="form-control" type="text" placeholder="Phone number">
 						<input class="form-control" type="text" placeholder="Envato Username">
-						<button class="btn btn-primary" type="submit">Let me in</button>
-						<p>
+						<button class="button w-100" type="submit">Let me in</button>
+						<p class="align-center">
 							Hurry up, Limited seats availble<br>*we will never spam your email
 						</p>
 					</form>
@@ -128,34 +142,38 @@
 		</div>
 	</section>
 
-	<section class="event">
+	<section id="event" class="event">
 		<div class="container">
-			<div class="row">
-				<div class="col-4">
+			<div class="row large-gutters" style="margin-bottom:70px;">
+				<div class="col-12 col-md-6 col-lg-4">
 					<div class="event-details">
-						<img class="event-details__img" src="" alt="">
-						<h4 class="event-details__title">Community</h4>
-						<p class="event-details__paragraph">
-							Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each other with interesting coversation
+						<img class="event-details__img" src="./images/event-img-1.png" alt="">
+						<h4>Community</h4>
+						<p>
+							Meet the Community you’ve always talked with, in real life! This meetup will be all about authors engaging each
+							other with interesting coversation
 							and topics. We will have loads of fun.
 						</p>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-6 col-lg-4">
 					<div class="event-details">
-						<img class="event-details__img" src="" alt="">
-						<h4 class="event-details__title">Talk Shop</h4>
-						<p class="event-details__paragraph">
-							In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a few tips and tricks from experienced authors from all over the country.
+						<img class="event-details__img" src="./images/event-img-2.png" alt="">
+						<h4>Talk Shop</h4>
+						<p>
+							In this meetup you will get to know the marketplaces better, because that’s why were all here for right? Learn a
+							few tips and tricks from experienced authors from all over the country.
 						</p>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-6 col-lg-4">
 					<div class="event-details">
-						<img class="event-details__img" src="" alt="">
-						<h4 class="event-details__title">War Stories</h4>
-						<p class="event-details__paragraph">
-							Gather round fellow authors!Hear the stories of success from your favorite authors and learn how they we able to tackle their problems and become successful.
+						<img class="event-details__img" src="./images/event-img-3.png" alt="">
+						<h4>War Stories</h4>
+						<p>
+							Gather round fellow authors! <br>
+							Hear the stories of success from your favorite authors and learn how they we able
+							to tackle their problems and become successful.
 						</p>
 					</div>
 				</div>
@@ -173,123 +191,568 @@
 							</div>
 						</div>
 						<div class="ea__row">
-							<div id="ea__header--one" class="ea__header">
-									<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--one" aria-expanded="false" aria-controls="collapseOne">
-										<div class="col col-xl-3 align-center">
-											<p>
-												10am - 12pm
-											</p>
-										</div>
-										<div class="col col-xl-7">
-											<p>
-												Introduction and presentations about Envato
-											</p>
-										</div>
-										<div class="col col-xl-2">
-											<i class="fas fa-plus-circle"></i>
-										</div>
-									</div>
-							</div>
-							<div id="ea__wrap--one" class="ea__wrap collapse" aria-labelledby="ea__header--one" data-parent="#ea">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
-								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
-								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
-								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-						<div class="ea__row">
-							<div id="ea__header--two" class="ea__header">
-									<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--two" aria-expanded="false" aria-controls="collapseOne">
-										<div class="col col-xl-3">
-											<p>
-												12pm - 02 pm
-											</p>
-										</div>
-										<div class="col col-xl-7">
-											<p>
-												Sessions by honorable guests and Speakers		
-											</p>
-										</div>
-										<div class="col col-xl-2">
-											<i class="fas fa-plus-circle"></i>
-										</div>
-									</div>
-							</div>
-							<div id="ea__wrap--two" class="ea__wrap collapse" aria-labelledby="ea__header--two" data-parent="#ea">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
-								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
-								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
-								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							</div>
-						</div>
-						<div class="ea__row">
-							<div id="ea__header--tree" class="ea__header">
-								<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--tree" aria-expanded="false" aria-controls="collapseOne">
-									<div class="col col-xl-3">
+							<div id="ea__header--one" class="ea__header ea__header--black">
+								<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--one" aria-expanded="false"
+								 aria-controls="collapseOne">
+									<div class="col col-xl-3 align-center">
 										<p>
-											12pm - 02 pm
+											10am - 12pm
 										</p>
 									</div>
 									<div class="col col-xl-7">
 										<p>
-											Sessions by honorable guests and Speakers		
+											Introduction and presentations about Envato
 										</p>
 									</div>
-									<div class="col col-xl-2">
+									<div class="col col-xl-2 align-center">
+										<i class="fas fa-plus-circle"></i>
+									</div>
+								</div>
+							</div>
+							<div id="ea__wrap--one" class="ea__wrap collapse" aria-labelledby="ea__header--one" data-parent="#ea">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+								officia aute,
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								sunt aliqua
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+								beer labore
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+								beer farm-to-table,
+								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+						<div class="ea__row">
+							<div id="ea__header--two" class="ea__header ea__header--grey">
+								<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--two" aria-expanded="false"
+								 aria-controls="collapseOne">
+									<div class="col col-xl-3 align-center">
+										<p>
+											12pm - 02pm
+										</p>
+									</div>
+									<div class="col col-xl-7">
+										<p>
+											Sessions by honorable guests and Speakers
+										</p>
+									</div>
+									<div class="col col-xl-2 align-center">
+										<i class="fas fa-plus-circle"></i>
+									</div>
+								</div>
+							</div>
+							<div id="ea__wrap--two" class="ea__wrap collapse" aria-labelledby="ea__header--two" data-parent="#ea">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+								officia aute,
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								sunt aliqua
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+								beer labore
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+								beer farm-to-table,
+								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+						<div class="ea__row">
+							<div id="ea__header--tree" class="ea__header ea__header--black">
+								<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--tree" aria-expanded="false"
+								 aria-controls="collapseOne">
+									<div class="col col-xl-3 align-center">
+										<p>
+											02pm - 03pm
+										</p>
+									</div>
+									<div class="col col-xl-7">
+										<p>
+											Break and Mingle time with the authors
+										</p>
+									</div>
+									<div class="col col-xl-2 align-center">
 										<i class="fas fa-plus-circle"></i>
 									</div>
 								</div>
 							</div>
 							<div id="ea__wrap--tree" class="ea__wrap collapse" aria-labelledby="ea__header--tree" data-parent="#ea">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
-								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
-								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
-								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+								officia aute,
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								sunt aliqua
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+								beer labore
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+								beer farm-to-table,
 								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
 						</div>
 						<div class="ea__row">
-							<div id="ea__header--four" class="ea__header">
-									<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--four" aria-expanded="false" aria-controls="collapseOne">
-										<div class="col col-xl-3">
-											<p>
-												12pm - 02 pm
-											</p>
-										</div>
-										<div class="col col-xl-7">
-											<p>
-												Sessions by honorable guests and Speakers		
-											</p>
-										</div>
-										<div class="col col-xl-2">
-											<i class="fas fa-plus-circle"></i>
-										</div>
+							<div id="ea__header--four" class="ea__header ea__header--grey" style="border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
+								<div class="row" type="button" data-toggle="collapse" data-target="#ea__wrap--four" aria-expanded="false"
+								 aria-controls="collapseOne">
+									<div class="col col-xl-3 align-center">
+										<p>
+											03pm - 05pm
+										</p>
 									</div>
+									<div class="col col-xl-7">
+										<p>
+											Portfolio Review, Rewards and Ending Presentation
+										</p>
+									</div>
+									<div class="col col-xl-2 align-center">
+										<i class="fas fa-plus-circle"></i>
+									</div>
+								</div>
 							</div>
 							<div id="ea__wrap--four" class="ea__wrap collapse" aria-labelledby="ea__header--four" data-parent="#ea">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, 
-								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua 
-								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore 
-								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+								officia aute,
+								non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+								sunt aliqua
+								put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+								beer labore
+								wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+								beer farm-to-table,
 								raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
-						</div>		
+						</div>
 					</div>
 					<p class="align-center">
-						Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish <br>
-						it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)
+						Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long
+						and we do plan to finish <br>
+						it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could
+						it do? :)
 					</p>
 				</div>
 			</div>
 		</div>
+	</section>
 
+	<section class="rewards">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-4 d-flex justify-content-center">
+					<img src="./images/rewards-logo.png" alt="Rewards logo">
+				</div>
+				<div class="col-12 col-xl-8">
+					<h2>
+						We reward the Elites!
+					</h2>
+					<p>
+						Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in
+						achieving great success in the marketplace and we want to make known to the people of our country that you are
+						amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote
+						your works in our community.
+					</p>
+					<p>
+						All you have to do is contact us by clicking the button here and then its just going to the event, saying
+						something motivational and taking that swag while looking amazing infront of thousands of other community
+						members.
+
+					</p>
+					<p>
+						*Be advised, we will only give you Elite thank you swag for each level of elite you cross.That means if you do
+						not cross to the next elite level before the next event, you cannot claim your prizes.
+					</p>
+					<button class="button" type="button">Bring on the swag!</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="speakers" class="speakers">
+		<div class="container">
+			<div class="row">
+				<div class="title-section col-12 col-lg-7">
+					<h2>
+						Speakers
+					</h2>
+					<p>
+						Meet our Valuable speakers who will be each giving 10 minutes sessions on different subjects regarding being a
+						digital product author, working at envato and marketing your business.Hope you will have a great time listening
+						to
+						our presentations!
+					</p>
+				</div>
+			</div>
+			<div class="row medium-gutters">
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap d-flex justify-content-center align-items-center">
+						<img class="speakers__img--logo" src="./images/speakers-img-logo.png" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-xl-4">
+					<div class="speakers__wrap">
+						<img class="speakers__img" src="" alt="">
+						<div class="speakers__content">
+							<div class="speakers__content-title">
+								<h2>
+									Shahriyer Shuvo
+								</h2>
+								<p>
+									More about selling in the
+									Envato Marketplaces
+								</p>
+							</div>
+
+							<div class="speakers__social-icons">
+								<a href="">
+									<img src="./images/facebook.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/twitter.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/behance.svg" alt="">
+								</a>
+								<a href="">
+									<img src="./images/dribble.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sponsor" class="sponsor">
+		<div class="container">
+			<div class="row">
+				<div class="col col-xl-8 offset-xl-2 align-center">
+					<h2>
+						Sponsor Our Event!
+					</h2>
+					<p>
+						If you want to help us making this event lively and successful, help us by sponsoring our event! <br>
+						This will help us bring in more people, have better livestreaming equipment, maybe even our own chef! <br>
+						You can also sponsor us by giving away free swag at the event!
+					</p>
+					<p>
+						Here’s who have sponsored us already:
+					</p>
+					<div class="sponsor__images flex-column flex-sm-row">
+						<img class="sponsor__logo" src="./images/sponsor-logo-2.png" alt="">
+						<img class="sponsor__logo" src="./images/sponsor-logo-1.png" alt="">
+						<img class="sponsor__logo" src="./images/sponsor-logo-3.png" alt="">
+					</div>
+					<button class="button">Sponsor Us</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="past-events" class="past-events">
+		<div class="container">
+			<div class="row">
+				<div class="title-section col-12 col-lg-7">
+					<h2>
+						Past Events
+					</h2>
+					<p>
+						Check out the photos of our previous events where we rocked with a lot of Famous and enthusiatic authors! We’re
+						always planning to make our future events feel fresh and fun to be at. :)
+					</p>
+				</div>
+			</div>
+			<div class="past-events__wrap">
+				<div class="row no-gutters">
+					<div class="col-12 col-xl-6 ">
+						<div class="past-events__content" style="background-color: #3d6ed2"></div>
+					</div>
+					<div class="col-12 col-xl-6 ">
+						<div class="past-events__content" style="background-color: #90d23d"></div>
+					</div>
+					<div class="col-12 col-xl-6 ">
+						<div class="past-events__content" style="background-color: #ff9d00"></div>
+					</div>
+					<div class="col-12 col-xl-6 ">
+						<div class="past-events__content" style="background-color: #e0652a"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center align-items-center">
+				<button class="button past-events__btn align-center">View More</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacts" class="contacts">
+		<div class="contacts-modal is-visible" aria-hidden="true" role="dialog" tabindex="-1">
+			<div class="contacts-modal__overlay modal-hide"></div>
+			<div class="contacts-modal__container d-flex justify-content-center align-items-center">
+				<div class="container">
+					<div class="contacts-modal__wrap">
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<div class="contacts__map">
+									<img src="./images/view-map.png" alt="">
+									<p class="align-center">
+										Lorem Ipsum Avenue, 420/2 elm street, Melbourne, Sydney - 2122, Kingdom of Australia
+									</p>
+									<button class="button contacts-modal__btn" type="button">
+										View Map
+									</button>
+								</div>
+							</div>
+							<div class="col-12 col-lg-6">
+								<form class="contacts__form">
+									<input class="form-control" type="text" placeholder="Enter your email">
+									<textarea class="form-control" type="text" placeholder="Type your message"></textarea>
+									<button class="button w-100" type="button">Send Message</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="footer d-flex flex-column justify-content-center align-items-center">
+		<div class="footer__social-icons">
+			<a href="">
+				<img src="./images/facebook.svg" alt="">
+			</a>
+			<a href="">
+				<img src="./images/twitter.svg" alt="">
+			</a>
+			<a href="">
+				<img src="./images/linkedin.svg" alt="">
+			</a>
+			<a href="">
+				<img src="./images/google-plus.svg" alt="">
+			</a>
+			<a href="">
+				<img src="./images/trumblr.svg" alt="">
+			</a>
+		</div>
+		<p class="align-center">
+			Hope we see you at the event! <br>
+			All Rights Reserved. Envato Bangladesh © 2015
+		</p>
 	</section>
 
 	<!-- Scripts -->
 	<script src="scripts/vendor.min.js" type="text/javascript"></script>
 	<script src="scripts/main.js" type="text/javascript"></script>
 </body>
-</html>
 
+</html>

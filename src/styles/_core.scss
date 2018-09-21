@@ -1,5 +1,36 @@
 /*
 ================================================================================
+    Z-index
+================================================================================
+*/
+
+body {
+    z-index: 1;
+}
+
+.navbar-nav {
+    z-index: 20;
+}
+
+.contacts-background  {
+    z-index: 10;
+}
+.contacts-modal {
+    z-index: 100;
+}
+
+.contacts-modal__container {
+    z-index: 110;
+}
+
+.contacts-modal__overlay {
+    z-index: 105;
+}
+
+
+
+/*
+================================================================================
     Reboot
 ================================================================================
 */
@@ -48,7 +79,7 @@ body textarea:required:valid {
 
 body {
     position: relative;
-    //background: $body-bg url(../images/bg-pattern.png) 0 0 repeat;
+    background: $body-bg 0 0 repeat;
     //background-size: 193px;
     font-family: $font-family-base;
     font-size: 1rem;
@@ -237,20 +268,20 @@ textarea {
   }
 
 .medium-gutters {
-    margin-right: -30px;
-    margin-left: -30px;
+    margin-right: -20px;
+    margin-left: -20px;
     > [class*="col-"] {
-      padding-right: 30px;
-      padding-left: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 
 .large-gutters {
-    margin-right: -45px;
-    margin-left: -45px;
+    margin-right: -50px;
+    margin-left: -50px;
     > [class*="col-"] {
-      padding-right: 45px;
-      padding-left: 45px;
+      padding-right: 50px;
+      padding-left: 50px;
     }
   }
 
@@ -276,6 +307,8 @@ h6,
     line-height: 1.1;
     margin-bottom: 1rem;
     margin-top: 0;
+    font-weight: 800;
+    color: $black-color;
 }
 
 h1,
@@ -284,19 +317,19 @@ h1,
 }
 h2,
 .h2 {
-    font-size: 36px;
+    font-size: 50px;    
 }
 h3,
 .h3 {
-    font-size: 26px;
+    font-size: 45px;
 }
 h4,
 .h4 {
-    font-size: 22px;
+    font-size: 35px;
 }
 h5,
 .h5 {
-    font-size: 18px;
+    font-size: 30px;
 }
 h6,
 .h6 {
@@ -310,8 +343,11 @@ strong {
 
 
 p {
+    font-weight: 200;
+    font-size: 14px;
     margin-bottom: 1rem;
     margin-top: 0;
+    color: $black-color;
 }
 
 ol,
@@ -332,7 +368,26 @@ blockquote {
     margin: 0 0 1rem;
 }
 
+.fw-bold {
+    font-weight: 700;
+}
 
+.fw-light {
+    font-weight: 200;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+/*
+================================================================================
+    Отступы
+================================================================================
+*/
+
+.mb-20 {
+    margin-bottom: 20px;
+}
 
 
 /*
@@ -351,7 +406,7 @@ a,
     cursor: pointer;
     // border-bottom: 1px solid $link-border-color;
     //text-decoration: $link-decoration;
-    transition: all .15s ease-in-out;
+    //transition: all .15s ease-in-out;
 
     &:hover {
         //color: $link-hover-color;
@@ -359,13 +414,6 @@ a,
         text-decoration: none;
     }
 }
-
-.link-danger {
-    //color: $brand-danger;
-}
-
-
-
 
 /*
 ================================================================================
@@ -386,16 +434,18 @@ img {
 */
 
 .button {
-    //background-color: #fff;
-    //border: 1px solid #b1adb5;
-    //color: $body-color;
-    //border-radius: 20px;
+    background-color: $green-color;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
     cursor: pointer;
     //display: inline-block;
     //height: 40px;
-    //font-size: 14px;
+    font-family: roboto-custom,Arial,sans-serif;
+    font-size: 18px;
     //line-height: 1.15;
-    //padding: 11px 22px;
+    padding: 15px 25px;
+    font-weight: 400;
     text-align: center;
     //transition: all .15s ease-in-out;
     user-select: none;
@@ -404,16 +454,12 @@ img {
 
     &:hover,
     &:focus {
-        //background-color: #b1adb5;
-        //color: #fff;
+        box-shadow: 5px 5px 12px -4px rgba(0,0,0,.2), inset 0 3px 5px rgba(0,0,0,.1);
     }
-    // &:active,
-    // &.active {
-    //     background-image: none;
-    //     -webkit-box-shadow: 5px 5px 12px -4px rgba(0,0,0,.2), inset 0 3px 5px rgba(0,0,0,.1);
-    //             box-shadow: 5px 5px 12px -4px rgba(0,0,0,.2), inset 0 3px 5px rgba(0,0,0,.1);
-    //     outline: 0;
-    // }
+     &:active,
+    &.active {
+        transform: scale(0.9);
+    }
     &:focus {
         outline: none;
     }

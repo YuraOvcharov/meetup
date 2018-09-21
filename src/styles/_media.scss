@@ -1,36 +1,106 @@
 @import "variables";
 
-//Desktop First 
+//Desktop First
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px){
-    /**/
+    .rewards {
+        text-align: center;
+        background-size: cover;
+        img {
+            position: relative;
+        }
+    }
+
+    // .sponsor {
+    //     background-size: cover;
+    // }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px){
-     /**/
+    .timer .timer__wrap {
+        padding: 0 5px;
+    }
+
+    .register-box {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .description {
+        text-align: center;
+
+        .description__paragraph {
+            padding: 0;
+        }
+    }
+
+    .contacts {
+        min-height: 1000px;
+    }
+
+    .contacts__form {
+        padding-left: 70px !important;
+    }
+
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px){
-    /**/
+    .timer .timer__wrap .timer__figure {
+        min-width: 120px;
+    }
+
+    .speakers__social-icons img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .contacts__form {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 }
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px){
-    /**/
+@media only screen and (max-width : 576px){
+    .timer__wrap{
+        padding: 10px !important;
+
+        &:nth-child(2n) {
+            display: none;
+        }
+    }
+
+    .timer {
+        flex-wrap: wrap;
+    }
+
+    .sponsor {
+        min-height: 1100px;
+
+        h2 {
+            margin-bottom: 60px;
+        }
+    }
+
+
+
 }
-
-
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px){
-    /**/
+    .navbar {
+        padding-top: 30px !important;
+    }
 }
+
+
+
 
 
 /*==========  Mobile First  ==========*/
@@ -42,7 +112,7 @@
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px){
+@media only screen and (min-width : 576px){
     /**/
 }
 

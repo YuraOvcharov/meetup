@@ -53,7 +53,7 @@
     @media (min-width:nth($keys,$length)) {
       #{$property}: map-get($map, nth($keys,$length));
     }
-  }
+}
   
   /// linear-interpolation
   /// Calculate the definition of a line between two points
@@ -134,18 +134,6 @@
     }
     @return $newList;
   }
-
-
-//     $map: (360: 29, 768: 37, 1200: 46);
-
-//     $map: (360: 25, 768: 30, 1200: 36);
-
-//     $map: (360: 20, 768: 23, 1200: 26);
-
-//     $map: (360: 16, 768: 16, 1200: 16);
-
-//     $map: (360: 13, 768: 13, 1200: 13);
-
 
 
 

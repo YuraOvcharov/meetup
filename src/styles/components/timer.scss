@@ -1,0 +1,57 @@
+@import "mixins/font-size";
+
+
+
+.timer {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 20px;
+    border: 2px solid $green-color;
+    padding: 20px 0;
+    
+    font-family: $font-family-base;
+    font-size: 25px;
+    line-height: 1;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+   // margin-top: 100px;
+
+    .timer__wrap {
+        padding: 0px 15px;
+
+        .timer__double-dots {
+            $map: (320px: 22px, 768px: 70px, 992px: 130px);
+            @include poly-fluid-sizing('font-size', $map); 
+            font-weight: 100;
+            padding-bottom: 22px;
+        }
+        
+        .timer__figure {
+            text-align: center;
+
+            $map: (320px: 40px, 768px: 70px, 992px: 130px);
+            @include poly-fluid-sizing('font-size', $map);
+            //font-size: 130px;
+            font-weight: 100;            
+            min-width: 145px;
+        }
+
+        .timer__word {
+
+            $map: (320px: 18px, 768px: 20px, 992px: 25px);
+            @include poly-fluid-sizing('font-size', $map);
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
