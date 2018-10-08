@@ -8,6 +8,10 @@ body {
     z-index: 1;
 }
 
+.preloader {
+    z-index: 10000;
+}
+
 .navbar-nav {
     z-index: 20;
 }
