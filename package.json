@@ -4,6 +4,10 @@
   "description": "Project Description",
   "license": "MIT",
   "repository": "link_to_repository",
+  "scripts": {
+    "start": "node app",
+    "postinstall": "gulp default"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
