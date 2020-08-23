@@ -6,7 +6,7 @@
   "repository": "link_to_repository",
   "scripts": {
     "start": "node app",
-    "postinstall": "gulp build"
+    "postinstall": "gulp public"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
